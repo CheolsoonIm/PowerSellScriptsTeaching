@@ -13,5 +13,5 @@ use >> to append
 #>
 
 Get-Process
-clear
+Clear-Host
 
