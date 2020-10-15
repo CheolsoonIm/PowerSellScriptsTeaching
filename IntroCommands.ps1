@@ -24,7 +24,7 @@ help Start-Process
 help Start-Process -Full
 
 dir # list directories could use ls too
-ls
+ls #Linux
 
 ###################################
 #Piping and Routing
