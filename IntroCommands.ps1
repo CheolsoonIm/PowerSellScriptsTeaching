@@ -1,7 +1,7 @@
 Get-Process | Sort-Object -Property CPU |  Select-Object -First 10
 
 <#
-my directory: "C:\Users\w0038182\OneDrive - Nova Scotia Community College\Classes\Fall2020\INET - Server Scripting\GroupB\PSScripts"
+
 F8 - runs selected text
 F5 - runs all text
 ctrl C will escape
@@ -47,11 +47,10 @@ Redirecting and saving results
 #>
 
 Help > help.txt
-Remove-Item  "C:\Users\w0038182\OneDrive - Nova Scotia Community College\help.txt"
+#Remove-Item  \help.txt
 
 dir | Sort-Object -property Length, Name > dir.txt # redirect /save
 
 dir
 ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >>  dir.txt # append
 
-#cd "C:\Users\w0038182\OneDrive - Nova Scotia Community College\dir.txt"
