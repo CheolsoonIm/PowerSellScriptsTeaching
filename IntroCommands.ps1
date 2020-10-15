@@ -54,4 +54,4 @@ dir | Sort-Object -property Length, Name > dir.txt # redirect /save
 dir
 ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >>  dir.txt # append
 
-cd "C:\Users\w0038182\OneDrive - Nova Scotia Community College\dir.txt"
+#cd "C:\Users\w0038182\OneDrive - Nova Scotia Community College\dir.txt"
