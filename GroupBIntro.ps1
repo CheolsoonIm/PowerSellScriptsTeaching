@@ -55,7 +55,7 @@ dir
 ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >>  dir.txt # append
 
 
-
+# dealing with funky strings
 $mPath="C:\temp\th" + "'" + "is folder\dir.txt"
 $mPath
 
