@@ -56,8 +56,12 @@ ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >> 
 
 
 
+$mPath="C:\temp\th" + "'" + "is folder\dir.txt"
+$mPath
 
-ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >  C:\temp\dir.txt
+ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >  $mPath
+
+
 ls | Sort-Object -property LastWriteTime -Descending | Select-Object -First 3 >>  C:\temp\dir.txt # append
 
 
