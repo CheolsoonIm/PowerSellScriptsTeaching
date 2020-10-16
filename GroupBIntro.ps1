@@ -17,12 +17,14 @@ cd .. # back a dir
 cd /. # root dir
 
 ### Using Help
-help *process*
+help *process
 help Start-Process
 help Start-Process -Full
 
 dir # list directories could use ls too
 ls #Linux
+
+help Get-ChildItem -Full
 
 ###################################
 #Piping and Routing
