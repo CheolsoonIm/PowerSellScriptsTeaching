@@ -54,3 +54,16 @@ dir | Sort-Object -property Length, Name > dir.txt # redirect /save
 dir
 ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >>  dir.txt # append
 
+
+
+
+ls | Sort-Object -property LastWriteTime -Descending | Select-Object -Last 3 >  C:\temp\dir.txt
+ls | Sort-Object -property LastWriteTime -Descending | Select-Object -First 3 >>  C:\temp\dir.txt # append
+
+
+ls | Sort-Object -property LastWriteTime -Descending | Select-Object -after ([datetime]'10/01/2020 12:06:00 pm') >>  C:\temp\dir.txt 
+
+
+# copy dirs froma given datetime into a file
+$filterDate = (Get-Date).AddDays(-1).Date
+ls | Sort-Object -property LastWriteTime -Descending |  Where-Object -property LastWriteTime -ge $filterDate >>  C:\temp\dir.txt 
